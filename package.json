@@ -1,0 +1,20 @@
+{
+  "name": "ajaxBlog-frontEnd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abedababe8/ajaxBlog-frontEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abedababe8/ajaxBlog-frontEnd/issues"
+  },
+  "homepage": "https://github.com/abedababe8/ajaxBlog-frontEnd#readme"
+}
