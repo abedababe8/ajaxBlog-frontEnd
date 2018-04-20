@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <script defer src="./scripts/app.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   </head>
   <body>
 
@@ -15,7 +16,7 @@
         <h1 class="display-3">Where is my Mind<h1>
         <p class="lead">About my journey as a Web Developer and my Life</p>
         <p class="lead">
-          <button id="create-post" class="btn btn-secondary">Create new Post</button>
+          <button id="show-post" class="btn btn-secondary">Create new Post</button>
         </p>
       </div>
     </div>
@@ -26,23 +27,39 @@
         </div>
         <div class="post-container col-8">
           <section>
-            <header>
-              <h2></h2>
-            </header>
-            <article>
-              <p></p>
-            </article>
+            <!-- <header> -->
+              <h2 class="titleDisplay"></h2>
+            <!-- </header> -->
+            <!-- <article> -->
+              <p class="contentDisplay"></p>
+            <!-- </article> -->
+            <button id="edit-post" class="btn btn-secondary hide">Edit</button>
+            <button id="delete-post" class="btn btn-secondary hide">Delete</button>
           </section>
 
-          <form id="post-form" action="/posts/">
+          <form class="put-form hide" action="/posts/">
             <div class="form-group">
               <label for="title">Title</label>
-              <input type="text" class="form-control" id="title" value>
+              <input type="text" class="form-control" name="title" value>
             </div>
             <div class="form-group">
               <label for="title">Content</label>
-              <textarea type="text" rows="6" class="form-control" id="content"></textarea>
+              <textarea type="text" rows="6" class="form-control" name="content"></textarea>
             </div>
+            <input value="Edit" type="submit" id="edit" class="btn, btn-info, btn-large">
+          </form>
+
+
+          <form class="post-form hide" action="/posts/">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" name="title" value>
+            </div>
+            <div class="form-group">
+              <label for="title">Content</label>
+              <textarea type="text" rows="6" class="form-control" name="content"></textarea>
+            </div>
+            <input value="Create New Post" type="submit" id="create-post" class="btn, btn-info, btn-large">
           </form>
         </div>
       </div>
